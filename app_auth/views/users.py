@@ -53,6 +53,8 @@ class ResendVerifyOTPView(APIView):
             return Response({"message": "No User found with this email"}, status=status.HTTP_400_BAD_REQUEST)
 
         otp = random.randint(1000, 9999)
+        print("=============================================")
+        print(otp)
 
         otp_cached.token = otp
         otp_cached.save()
