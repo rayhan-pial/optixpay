@@ -13,7 +13,7 @@ class BankTypeModel(BaseModel):
         ('p2c', 'Peer-to-Customer'),
     ]
     category = models.CharField(max_length=3, choices=CATEGORY_CHOICES, help_text="Category of the bank type")
-    
+
 
     def __str__(self):
         return f"{self.name} ({self.get_category_display()})"

@@ -13,9 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = config('SECRET_KEY', None)
-# pial
-SECRET_KEY = 'aqsubdjkas51514511@'
+SECRET_KEY = config('SECRET_KEY', None)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -40,7 +38,6 @@ INSTALLED_APPS = [
     'app_auth.apps.AppAuthConfig',
     'app_profile',
     'app_deposit',
-    'app_bank',
     'app_withdraw',
     # Additional Libraries
     'rest_framework',
